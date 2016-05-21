@@ -6,7 +6,7 @@ Change the source and target appropriately.
 Files are copied to a date based folder structure to help organize your photo library.
 
 The folder structure is:
-...
+```
    TARGET = ~/Pictures
               +-- /2016
                   +-- /2016-01-01 New Years
@@ -15,6 +15,6 @@ The folder structure is:
                   +-- /2016-01-02
                       +-- 0000002.JPG
                                  
-...
+```
 
 The script will create the necessary directories and allows for custom names.       
