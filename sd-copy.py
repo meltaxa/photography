@@ -19,7 +19,7 @@ target=home+"/Pictures"
 # Only copy files with these extensions
 photo_ext=[".ARW",".JPG",".PNG",".GIF",".ORF"]
 
-# Create a directory is it doesn't exist
+# Create a directory if it doesn't exist
 def makedir(destination):
     if not os.path.exists(destination):
         print "[INFO] Creating directory %s" % destination
