@@ -1,16 +1,20 @@
 #!/usr/bin/env python
 
 import os
+from os.path import expanduser
 import glob
 import time
 import datetime
 import shutil
+import platform
 
-# For Macs
-source="/Volumes/NO NAME"
+if platform.system() == "Windows":
+    source="E:/"
+else:
+    source="/Volumes/NO NAME"
 
-# Main location to copy to
-target="~/Pictures"
+home=expanduser("~")
+target=home+"/Pictures"
 
 # Only copy files with these extensions
 photo_ext=[".ARW",".JPG",".PNG",".GIF",".ORF"]
